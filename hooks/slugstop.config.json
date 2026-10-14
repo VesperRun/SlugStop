@@ -1,0 +1,10 @@
+﻿{
+  "allowed_patterns": ["composer", "claude-", "gpt-", "gemini-", "inherit"],
+  "blocked_patterns": ["grok"],
+  "bypass_prefix": "[slug:any]",
+  "deny_submit_message": "SlugStop: this model isn't on your allow list. Switch the picker or start with [slug:any] on its own line.",
+  "deny_subagent_message": "SlugStop: subagent model blocked. Change parent chat model or edit slugstop.config.json.",
+  "session_context": "SlugStop: blocked model slugs can't send unless the prompt starts with [slug:any].",
+  "audit_log": true
+}
+

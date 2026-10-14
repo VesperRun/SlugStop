@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/slugstop.ps1\"",
+        "timeout": 8
+      }
+    ],
+    "subagentStart": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/slugstop.ps1\"",
+        "timeout": 8
+      }
+    ],
+    "sessionStart": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/slugstop.ps1\"",
+        "timeout": 5
+      }
+    ]
+  }
+}
